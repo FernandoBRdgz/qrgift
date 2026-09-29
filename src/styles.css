@@ -30,6 +30,9 @@ body {
   line-height: 1.65;
   font-weight: 350;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }
 body.sellado { overflow: hidden; }
@@ -41,7 +44,7 @@ img { max-width: 100%; }
 [hidden] { display: none !important; }
 :focus-visible { outline: 2px solid var(--oro-claro); outline-offset: 3px; }
 
-.wrap { max-width: 1080px; margin-inline: auto; padding-inline: 16px; }
+.wrap { max-width: 1080px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
 .ceja { font-family: var(--cuerpo); font-size: .74rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--oro); }
 .oro-texto {
   background: linear-gradient(100deg, var(--oro-hondo), var(--oro-claro) 35%, var(--oro) 55%, var(--oro-claro) 80%, var(--oro-hondo));

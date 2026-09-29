@@ -32,8 +32,8 @@ interface Cuenta { d: string; h: string; m: string; s: string; }
       background: radial-gradient(90% 60% at 50% 100%, #4a2f1e 0%, transparent 70%),
                   linear-gradient(180deg, #120b07 0%, var(--noche) 60%, var(--espresso) 100%); }
     .cielo { position: absolute; inset: 0; width: 100%; height: 100%; }
-    .texto { position: relative; z-index: 2; padding-block: clamp(56px, 11vh, 120px) 24px; display: grid; gap: 20px; justify-items: start; }
-    h1 { font-size: clamp(2.7rem, 9.2vw, 6.2rem); font-weight: 400; letter-spacing: -.01em; color: var(--crema); }
+    .texto { position: relative; z-index: 2; padding-block: calc(clamp(40px, 9vh, 120px) + env(safe-area-inset-top, 0px)) 24px; display: grid; gap: 20px; justify-items: start; }
+    h1 { font-size: clamp(2.9rem, 11vw, 6.2rem); font-weight: 400; letter-spacing: -.01em; color: var(--crema); }
     h1 em { display: block; font-style: italic; font-weight: 500; }
     .sub { font-size: clamp(1.05rem, 2.6vw, 1.3rem); color: var(--suave); max-width: 36ch; }
     .cuenta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
@@ -46,7 +46,11 @@ interface Cuenta { d: string; h: string; m: string; s: string; }
     .skyline ::ng-deep .ventana { fill: var(--oro-claro); }
     .skyline ::ng-deep .ventana.t { animation: titila 5s ease-in-out infinite; }
     @keyframes titila { 0%, 100% { opacity: .9; } 50% { opacity: .15; } }
-    @media (max-width: 620px) { .cuenta div { min-width: 0; flex: 1; } }
+    @media (max-width: 620px) {
+      .cuenta { width: 100%; }
+      .cuenta div { min-width: 0; flex: 1; padding-block: 12px 10px; }
+      .cuenta b { font-size: 2.3rem; }
+    }
   `,
 })
 export class Hero {
