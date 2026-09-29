@@ -71,7 +71,7 @@ interface Grupo { titulo: string; dia: string; boletos: Boleto[]; }
                         <rect [attr.x]="r.x" y="0" [attr.width]="r.w" height="46" fill="#2A1C13" />
                       }
                     </svg>
-                    <p class="pie">B + F · Admite uno</p>
+                    <p class="pie">B + F</p>
                   </div>
                 </article>
               }
@@ -81,7 +81,7 @@ interface Grupo { titulo: string; dia: string; boletos: Boleto[]; }
         <div class="notas">
           <span>Hora de NY: EST, UTC−5</span>
           <span>Clima: entre −3 °C y 5 °C</span>
-          <span>Lleva guantes. Yo llevo el chocolate caliente.</span>
+          <span>Lleva guantes.</span>
         </div>
       </div>
     </section>

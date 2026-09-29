@@ -7,8 +7,8 @@ import { azar } from '../azar';
     <section>
       <svg #pinos viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
       <div class="textos">
-        <p class="frase">Del bosque con niebla a la ciudad que nunca se apaga.</p>
-        <p class="guino">It's been waiting for you.</p>
+        <p class="frase">Meet me at midnight.</p>
+        <p class="guino">NYC: It's been waiting for you.</p>
       </div>
     </section>
   `,

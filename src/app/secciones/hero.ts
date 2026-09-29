@@ -71,13 +71,16 @@ export class Hero {
   }
 }
 
-/** Cuenta regresiva a la medianoche del 1 de enero en Nueva York (EST, UTC−5). null durante la semana de año nuevo. */
+/**
+ * Cuenta regresiva a la medianoche del 1 de enero en la Ciudad de México (UTC−6 todo el año; sin horario de verano desde 2022).
+ * null durante la semana de año nuevo.
+ */
 function calculaCuenta(): Cuenta | null {
   const ahora = Date.now();
   const y = new Date().getUTCFullYear();
-  const esteAnio = Date.UTC(y, 0, 1, 5);
+  const esteAnio = Date.UTC(y, 0, 1, 6);
   if (ahora >= esteAnio && ahora - esteAnio < 7 * 864e5) return null;
-  const s = Math.max(0, Math.floor((Date.UTC(y + 1, 0, 1, 5) - ahora) / 1000));
+  const s = Math.max(0, Math.floor((Date.UTC(y + 1, 0, 1, 6) - ahora) / 1000));
   const dos = (n: number) => String(n).padStart(2, '0');
   return { d: String(Math.floor(s / 86400)), h: dos(Math.floor((s % 86400) / 3600)), m: dos(Math.floor((s % 3600) / 60)), s: dos(s % 60) };
 }
