@@ -1,15 +1,39 @@
 {
-  "_ayuda": "Edita este archivo desde GitHub (icono del lapiz) y guarda. El sitio se vuelve a publicar solo en ~1 minuto. Fechas en formato AAAA-MM-DD. Deja un valor vacio para mostrar 'Por confirmar'.",
-  "vuelo": {
-    "aerolinea": "",
-    "numero": "",
-    "origenCodigo": "MEX",
-    "origenCiudad": "Ciudad de México",
-    "fechaIda": "",
-    "fechaRegreso": ""
-  },
-  "pasajeros": [
-    { "nombre": "Bren", "asiento": "13A" },
-    { "nombre": "Fer", "asiento": "13B" }
+  "_ayuda": "Edita este archivo desde GitHub (icono del lapiz) y guarda. El sitio se vuelve a publicar solo en ~1 minuto. Fechas en formato AAAA-MM-DD. No pongas aqui el codigo de reservacion ni numeros de boleto: el repo es publico.",
+  "aerolinea": "Aeroméxico",
+  "pasajeros": ["Bren", "Fer"],
+  "trayectos": [
+    {
+      "titulo": "Ida",
+      "fecha": "2026-12-30",
+      "talon": "Año nuevo",
+      "vuelos": [
+        {
+          "numero": "AM 408",
+          "sale": { "codigo": "MEX", "ciudad": "Ciudad de México", "hora": "06:50", "terminal": "T2" },
+          "llega": { "codigo": "JFK", "ciudad": "Nueva York", "hora": "12:50", "terminal": "T4" },
+          "asientos": { "Bren": "26B", "Fer": "26A" }
+        }
+      ]
+    },
+    {
+      "titulo": "Regreso",
+      "fecha": "2027-01-03",
+      "talon": "Casa",
+      "vuelos": [
+        {
+          "numero": "AM 297",
+          "sale": { "codigo": "JFK", "ciudad": "Nueva York", "hora": "09:30", "terminal": "T4" },
+          "llega": { "codigo": "GDL", "ciudad": "Guadalajara", "hora": "14:40", "terminal": "T1" },
+          "asientos": { "Bren": "24A", "Fer": "24B" }
+        },
+        {
+          "numero": "AM 243",
+          "sale": { "codigo": "GDL", "ciudad": "Guadalajara", "hora": "16:21", "terminal": "T1" },
+          "llega": { "codigo": "MEX", "ciudad": "Ciudad de México", "hora": "17:55", "terminal": "T2" },
+          "asientos": { "Bren": "20A", "Fer": "20B" }
+        }
+      ]
+    }
   ]
 }
