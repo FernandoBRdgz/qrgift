@@ -6,7 +6,6 @@ export interface Pasajero {
 }
 
 export const DATOS = datos as {
-  pdf: { liga: string; modo: 'descarga' | 'vista' | string };
   vuelo: {
     aerolinea: string;
     numero: string;
@@ -31,16 +30,3 @@ export function porConfirmar(v: string): string {
   return v ? v : 'Por confirmar';
 }
 
-/**
- * Convierte una liga para compartir de Google Drive en descarga directa o vista previa.
- * Cualquier otra liga (o una ruta como "pase.pdf" dentro de /public) se deja igual.
- */
-export function ligaPdf(liga: string, modo: string): string {
-  liga = (liga || '').trim();
-  if (!liga) return '';
-  const m = liga.match(/\/d\/([A-Za-z0-9_-]{10,})/) || liga.match(/[?&]id=([A-Za-z0-9_-]{10,})/);
-  if (!m) return liga;
-  return modo === 'vista'
-    ? `https://drive.google.com/file/d/${m[1]}/view`
-    : `https://drive.google.com/uc?export=download&id=${m[1]}`;
-}

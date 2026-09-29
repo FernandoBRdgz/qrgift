@@ -4,16 +4,22 @@ import { azar } from '../azar';
 @Component({
   selector: 'app-bosque',
   template: `
-    <section aria-hidden="true">
-      <svg #pinos viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice"></svg>
-      <p class="frase">Del bosque con niebla a la ciudad que nunca se apaga.</p>
+    <section>
+      <svg #pinos viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+      <div class="textos">
+        <p class="frase">Del bosque con niebla a la ciudad que nunca se apaga.</p>
+        <p class="guino">It's been waiting for you.</p>
+      </div>
     </section>
   `,
   styles: `
-    section { position: relative; height: clamp(170px, 26vw, 260px); overflow: hidden; background: linear-gradient(180deg, var(--espresso), #241a14 55%, var(--noche)); }
+    section { position: relative; min-height: clamp(240px, 32vw, 340px); overflow: hidden; display: flex; align-items: flex-end;
+      background: linear-gradient(180deg, var(--espresso), #241a14 55%, var(--noche)); }
     svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-    .frase { position: absolute; inset: auto 16px 26px; text-align: center; z-index: 2; font-family: var(--display); font-style: italic;
-      font-size: clamp(1.1rem, 3.4vw, 1.5rem); color: var(--crema); text-shadow: 0 2px 12px #000; }
+    .textos { position: relative; z-index: 2; width: 100%; display: grid; justify-items: center; gap: 10px;
+      padding: 0 16px calc(36px + env(safe-area-inset-bottom, 0px)); text-align: center; }
+    .frase { font-family: var(--display); font-style: italic; font-size: clamp(1.1rem, 3.4vw, 1.5rem); color: var(--crema); text-shadow: 0 2px 12px #000; }
+    .guino { font-family: var(--maquina); font-size: .9rem; letter-spacing: .08em; color: var(--oro-claro); text-shadow: 0 2px 10px #000; }
   `,
 })
 export class Bosque {

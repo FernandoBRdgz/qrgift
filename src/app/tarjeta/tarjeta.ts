@@ -9,7 +9,7 @@ import { Imagenes, generarImagenes } from './dibujo';
   selector: 'app-tarjeta',
   template: `
     <main class="wrap">
-      <p class="ceja">Solo para Fernando</p>
+      <p class="ceja">Solo para Fer</p>
       <h1>Tarjeta con el QR</h1>
       <p class="nota">El QR abre <code>{{ url }}</code>. La tarjeta mide 1200×1800 px, que son 4×6 in (10×15 cm) a 300 dpi.</p>
       @if (imagenes(); as img) {

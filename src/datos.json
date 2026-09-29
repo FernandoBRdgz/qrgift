@@ -1,9 +1,5 @@
 {
   "_ayuda": "Edita este archivo desde GitHub (icono del lapiz) y guarda. El sitio se vuelve a publicar solo en ~1 minuto. Fechas en formato AAAA-MM-DD. Deja un valor vacio para mostrar 'Por confirmar'.",
-  "pdf": {
-    "liga": "",
-    "modo": "descarga"
-  },
   "vuelo": {
     "aerolinea": "",
     "numero": "",
@@ -14,6 +10,6 @@
   },
   "pasajeros": [
     { "nombre": "Bren", "asiento": "13A" },
-    { "nombre": "Fernando", "asiento": "13B" }
+    { "nombre": "Fer", "asiento": "13B" }
   ]
 }

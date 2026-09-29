@@ -12,7 +12,7 @@ interface Barra { x: number; w: number; }
         <div class="encabezado">
           <p class="ceja">Sujétate fuerte</p>
           <h2>Dos pases, un mismo asiento en la historia</h2>
-          <p>Uno con tu nombre y otro con el mío. El PDF oficial te espera más abajo, en la sala de guardado.</p>
+          <p>Uno con tu nombre y otro con el mío. Los detalles del vuelo llegan pronto.</p>
         </div>
         <div class="boletos">
           @for (p of boletos; track p.nombre) {
