@@ -10,7 +10,7 @@ interface Cuenta { d: string; h: string; m: string; s: string; }
       <canvas #cielo class="cielo" aria-hidden="true"></canvas>
       <div class="wrap texto">
         <p class="ceja">Feliz cumpleaños</p>
-        <h1>Brenda, nos vamos <em class="oro-texto">a Nueva York</em></h1>
+        <h1>Bren, nos vamos <em class="oro-texto">a Nueva York</em></h1>
         <p class="sub">Tú y yo, para empezar el año en la ciudad donde el mundo entero cuenta hacia atrás.</p>
         @if (cuenta(); as c) {
           <div class="cuenta">
@@ -19,9 +19,9 @@ interface Cuenta { d: string; h: string; m: string; s: string; }
             <div><b>{{ c.m }}</b><small>min</small></div>
             <div><b>{{ c.s }}</b><small>seg</small></div>
           </div>
-          <p class="nota">hasta la medianoche en Times Square</p>
+          <p class="nota">para recibir juntos el Año Nuevo en Nueva York</p>
         } @else {
-          <p class="nota">Feliz año nuevo, Brenda. Lo logramos.</p>
+          <p class="nota">Feliz año nuevo, Bren. Lo logramos.</p>
         }
       </div>
       <svg #skyline class="skyline" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>

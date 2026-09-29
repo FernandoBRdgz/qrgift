@@ -17,7 +17,7 @@ import { Imagenes, generarImagenes } from './dibujo';
           <a class="btn" [href]="img.tarjeta" download="tarjeta-qr-brenda.png">Descargar tarjeta</a>
           <a class="btn" [href]="img.qr" download="qr-brenda.png">Descargar solo el QR</a>
         </div>
-        <img id="img-tarjeta" [src]="img.tarjeta" alt="Tarjeta de cumpleaños con el QR" width="1200" height="1800">
+        <img id="img-tarjeta" [src]="img.tarjeta" alt="Tarjeta de cumpleaños para Bren con el QR" width="1200" height="1800">
         <img id="img-qr" [src]="img.qr" alt="QR solo" width="1160" height="1160" hidden>
       } @else {
         <p class="nota">{{ error() || 'Generando…' }}</p>

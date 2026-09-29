@@ -13,7 +13,7 @@
     "fechaRegreso": ""
   },
   "pasajeros": [
-    { "nombre": "Brenda", "asiento": "13A" },
+    { "nombre": "Bren", "asiento": "13A" },
     { "nombre": "Fernando", "asiento": "13B" }
   ]
 }

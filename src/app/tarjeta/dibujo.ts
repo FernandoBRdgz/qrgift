@@ -81,7 +81,7 @@ export async function generarImagenes(url: string): Promise<Imagenes> {
   g.textBaseline = 'alphabetic';
   g.fillStyle = ORO;
   g.font = '500 30px "Jost", sans-serif';
-  espaciado(g, 'PARA BRENDA', 600, 220, 12);
+  espaciado(g, 'PARA BREN', 600, 220, 12);
 
   g.fillStyle = TINTA;
   g.font = 'italic 400 132px "Bodoni Moda", Georgia, serif';

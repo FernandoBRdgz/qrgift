@@ -9,15 +9,15 @@ type Estado = 'cerrado' | 'abierto' | 'fuera' | 'oculto';
   template: `
     @if (estado() !== 'oculto') {
       <div class="sobre-fondo" [class.abierto]="estado() !== 'cerrado'" [class.fuera]="estado() === 'fuera'"
-           role="dialog" aria-modal="true" aria-label="Sobre para Brenda">
+           role="dialog" aria-modal="true" aria-label="Sobre para Bren">
         <div class="caja">
-          <p class="para">Para Brenda</p>
+          <p class="para">Para Bren</p>
           <div class="sobre">
             <div class="cuerpo"></div>
             <div class="solapa"></div>
             <button class="sello" type="button" aria-label="Romper el sello y abrir" (click)="abrir()"><span>B</span></button>
           </div>
-          <p class="texto">Hay algo que he guardado para ti desde hace tiempo.</p>
+          <p class="texto">Hoy es un día especial, y tú mereces algo igual de especial.</p>
           <p class="pista">Toca el sello</p>
         </div>
       </div>
