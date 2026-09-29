@@ -1,0 +1,58 @@
+:root {
+  color-scheme: dark;
+  --espresso: #1C120C;
+  --noche: #241710;
+  --cafe: #3A271C;
+  --cafe-2: #4A3224;
+  --caramelo: #A0724E;
+  --oro: #C9A45C;
+  --oro-claro: #E8CD8A;
+  --oro-hondo: #8A6424;
+  --crema: #F4EADB;
+  --papel: #F7EFE2;
+  --texto: #F1E6D6;
+  --suave: #C4AF95;
+  --tinta: #2A1C13;
+  --manzana: #9E1C1C;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --cuerpo: "Jost", "Futura", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --maquina: "Special Elite", "Courier New", Courier, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--espresso);
+  color: var(--texto);
+  font-family: var(--cuerpo);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 350;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+body.sellado { overflow: hidden; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.05; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--oro-claro); outline-offset: 3px; }
+
+.wrap { max-width: 1080px; margin-inline: auto; padding-inline: 16px; }
+.ceja { font-family: var(--cuerpo); font-size: .74rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--oro); }
+.oro-texto {
+  background: linear-gradient(100deg, var(--oro-hondo), var(--oro-claro) 35%, var(--oro) 55%, var(--oro-claro) 80%, var(--oro-hondo));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.encabezado { display: grid; gap: 12px; margin-bottom: 36px; max-width: 640px; }
+.encabezado h2 { font-size: clamp(2.1rem, 6vw, 3.4rem); color: var(--crema); }
+.encabezado p { color: var(--suave); }
+
+@media (max-width: 620px) { body { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

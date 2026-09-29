@@ -1,0 +1,19 @@
+{
+  "_ayuda": "Edita este archivo desde GitHub (icono del lapiz) y guarda. El sitio se vuelve a publicar solo en ~1 minuto. Fechas en formato AAAA-MM-DD. Deja un valor vacio para mostrar 'Por confirmar'.",
+  "pdf": {
+    "liga": "",
+    "modo": "descarga"
+  },
+  "vuelo": {
+    "aerolinea": "",
+    "numero": "",
+    "origenCodigo": "MEX",
+    "origenCiudad": "Ciudad de México",
+    "fechaIda": "",
+    "fechaRegreso": ""
+  },
+  "pasajeros": [
+    { "nombre": "Brenda", "asiento": "13A" },
+    { "nombre": "Fernando", "asiento": "13B" }
+  ]
+}
